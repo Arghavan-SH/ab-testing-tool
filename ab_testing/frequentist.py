@@ -20,7 +20,7 @@ def run_t_test(control,variant, alpha=0.05):
     result ={"control_mean": np.mean(control),
              "variant_mean":np.mean(variant),
              "mean_diff":np.mean(variant) - np.mean(control),
-             "t_statistic":t_stat,
+             "t_statistic": t_stat,
              "p_value":p_value,
              "is_significant":p_value < alpha
              }
